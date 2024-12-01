@@ -3,42 +3,37 @@ import AddButtonList from "./addListButton";
 
 export default function List() {
   return (
-    <div className="card shadow-md border w-full max-w-sm  bg-slate-50">
-      <div className="ps-6 py-4">
+    <div className="card card-compact shadow-md card-bordered flex-none w-1/4 bg-slate-100">
+      <div className="ps-5 py-4">
         <span className="text-xl font-semibold">Task</span>
-      <div className="card-body h-screen max-h-full overflow-y-auto">
+      </div>
+
+      <div className="card-body overflow-auto">
         <div className="flex flex-col gap-2">
           <div className="px-4 py-2 bg-white rounded-xl shadow-md border">
             Hello World
-          </div>
-          <div className="px-4 py-2 bg-white rounded-xl shadow-md border">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            delectus placeat perspiciatis reprehenderit sunt accusantium, maxime
-            non iste expedita alias.
           </div>
           <div className="px-4 py-2 bg-white rounded-xl shadow-md border">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Aspernatur, neque.
           </div>
           <div className="px-4 py-2 bg-white rounded-xl shadow-md border">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ut
-            molestias laborum nemo odit, amet quod, ducimus ullam quasi aperiam
-            tenetur impedit! Veritatis cupiditate fuga id voluptates nihil
-            earum. Provident officia adipisci nihil consequuntur, reprehenderit
-            ut earum mollitia repellat, quaerat quae nesciunt perspiciatis
-            dolorem autem sit aspernatur cupiditate minus aliquam modi,
-            quibusdam itaque cumque numquam! Laboriosam praesentium suscipit
-            sint deleniti cumque modi deserunt, iure quam odio sit impedit dicta
-            blanditiis earum aliquid cupiditate pariatur quas ex. Laborum ullam
-            dolorem aut quam odio quaerat praesentium animi fugiat quibusdam
-            consectetur ratione quod, architecto laboriosam reprehenderit fugit,
-            numquam ipsam asperiores incidunt et saepe.
+            lore
+          </div>
+          <div className="px-4 py-2 bg-white rounded-xl shadow-md border">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim vel
+            aperiam asperiores quae necessitatibus culpa sed perferendis
+            repudiandae, esse deleniti!
           </div>
         </div>
-        
-      </div>
-
-      <AddButtonList />
+        <div className="my-4">
+          <button
+            type="button"
+            className="bg-slate-200 btn btn-sm w-full flex justify-start "
+          >
+            + Add List
+          </button>
+        </div>
       </div>
     </div>
   );
