@@ -1,13 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 function useOpen(initialState = false) {
-  const [visibleDisplay, setVisibleDisplay] = useState(initialState)
+  const [openVisible, setOpenVisible] = useState(initialState);
 
-  const open = () => {
-    setVisibleDisplay(true)
-  }
+  const open = () => setOpenVisible(true);
 
-  return {visibleDisplay, open}
+  return { openVisible, open };
 }
 
-export default useOpen
+export default useOpen;

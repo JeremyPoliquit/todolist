@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 function useClose(initialState = false) {
-    const [visibleDisplay, setVisibleDisplay] = useState(initialState)
+  const [closeVisible, setCloseVisible] = useState(initialState);
 
-    const close = () => setVisibleDisplay(false)
+  const close = () => setCloseVisible(false);
 
-    return {visibleDisplay, close}
+  return { closeVisible, close };
 }
 
-export default useClose
+export default useClose;
